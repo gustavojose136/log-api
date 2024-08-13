@@ -1,9 +1,9 @@
 interface IUser {
     ID?: string;
-    eCPF?: string;
-    Status?: string;
+    Nome?: string;
     Email?: string;
     Senha?: string;
+    Cpf?: string;
     ID_UsuarioCriacao?: string;
     ID_UsuarioAlteracao?: string;
     DataCriacao?: Date;

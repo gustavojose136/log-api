@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "LogTeste",
+    "password": "15Dev",
+    "database": "DadosTeste",
+    "host": "localhost",
+    "dialect": "mssql",
+    "port": 1434  
+  },
+  "test": {
+    "username": "LogTeste",
+    "password": "15Dev",
+    "database": "DadosTeste",
+    "host": "localhost",
+    "dialect": "mssql",
+    "port": 1434  
+  },
+  "production": {
+    "username": "LogTeste",
+    "password": "15Dev",
+    "database": "DadosTeste",
+    "host": "localhost",
+    "dialect": "mssql",
+    "port": 1434  
+  }
+}

@@ -1,11 +1,22 @@
 "use strict";
 require("dotenv/config");
-const { DB_HOST, DB_USER, DB_PASS, DB_NAME } = process.env;
+
 const config = {
-    username: DB_USER,
-    password: DB_PASS,
-    database: DB_NAME,
-    host: DB_HOST,
-    dialect: "mysql",
+    username: "LogTeste",
+    password: "15Dev",
+    database: "DadosTeste",
+    host: "127.0.0.1",
+    dialect: "mssql",
+    dialectOptions: {
+        options: {
+            encrypt: false,
+            trustServerCertificate: true,
+        }
+    },
+    define: {
+        timestamps: true,
+        underscored: true,
+    },
 };
+
 module.exports = config;

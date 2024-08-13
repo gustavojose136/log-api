@@ -3,11 +3,11 @@ import db from ".";
 import sequelize from "sequelize";
 
 class User extends Model {
-  declare ID: number;
-  declare eCPF: string;
-  declare Status: string;
+  declare Id: string;
+  declare Nome: string;
   declare Email: string;
   declare Senha: string;
+  declare Cpf: string;
   declare ID_UsuarioCriacao: string;
   declare ID_UsuarioAlteracao: string;
   declare DataCriacao: Date;
@@ -20,15 +20,11 @@ class User extends Model {
 User.init(
   {
     ID: {
-      type: sequelize.INTEGER,
+      type: sequelize.STRING,
       primaryKey: true,
       autoIncrement: true,
     },
-    eCPF: {
-      type: sequelize.STRING,
-      allowNull: false,
-    },
-    Status: {
+    Nome: {
       type: sequelize.STRING,
       allowNull: false,
     },
@@ -37,6 +33,10 @@ User.init(
       allowNull: false,
     },
     Senha: {
+      type: sequelize.STRING,
+      allowNull: false,
+    },
+    Cpf: {
       type: sequelize.STRING,
       allowNull: false,
     },
